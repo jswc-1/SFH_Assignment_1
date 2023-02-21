@@ -1,8 +1,55 @@
 
-html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+html, body, h1, h2, h3, h4, ul, ol, li, p, a, img {
     padding: 0;
     border: 0;
     margin: 0;
     font: inherit;
     font-size: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  .header{
+    background: blue ;
+    height: 50px;
+    box-shadow: 20px 20px 50px 15px grey;
+    overflow: hidden;
+  }
+
+  .header_text {
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  #img_menu {
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding-left: 5px;
+  }
+
+  #img_logo {
+    height: 50px;
+    width: 50px;
+    float: right;
+    padding-right: 5px;
+  }
+
+  .header #myLinks {
+    display: none;
+  }
+
+  .header a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
   }
