@@ -7,11 +7,7 @@
     font-size: 100%;
   }
 
-  @media only screen and (max-width: 800px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+
 
   .header{
     background: blue ;
@@ -62,16 +58,32 @@
     padding-left: 10px;
   }
 
-  .main_contain {
+  /*main content, img, text*/
+
+  .main_content {
     height: 600px;
-    width: 80vw;
+    max-width: 1200px;
+    border: black solid 1px;
+    margin: 0 auto 0 auto;
+
   }
 
   #main_image{
-    max-height:100%; 
-    max-width:100%;
+    width: auto;
+    height: 0;
+   /* max-height:100%; */
+    /*max-width:100%;*/
+    /*object-fit: contain;*/
+    padding-top: 56.25%;
     z-index: -1;
     position: relative;
+    max-width: 1200px;
+    border: red solid 1px;
+    display: block;
+    background: url("images/canoe.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
 
 .main_image_text{
@@ -79,4 +91,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 64px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .main_image_text{
+    font-size: 32px;
+  }
 }
